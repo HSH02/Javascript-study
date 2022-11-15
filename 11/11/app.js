@@ -23,3 +23,9 @@
 //     return ~(~d.sort((a,b)=>a-b).map(v => budget -= v).findIndex(v => v < 0) || ~d.length);
 // }
 //~->비트를 뒤집어줌
+
+// function solution(d, budget) {
+//     d.sort((a, b) => a - b);
+//     while (d.reduce((a, b) => (a + b), 0) > budget) d.pop();
+//     return d.length;
+// }
